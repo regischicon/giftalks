@@ -32,7 +32,7 @@ class Post(models.Model):
             # Random Endpoint
         api_response = api_instance.gifs_random_get(api_key, tag=tag, rating=rating, fmt=fmt)
             #pprint(api_response)
-        self.title = api_response.fixed_height_downsampled_url
+        self.title = api_response.data.fixed_height_downsampled_url
         #except ApiException as e:
             #print("Exception when calling DefaultApi->gifs_random_get: %s\n" % e)
 
