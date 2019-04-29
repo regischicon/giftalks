@@ -39,5 +39,4 @@ class Post(models.Model):
 
         return self.title
         ############API GIPHY
-    
-    title = gifmaker()
+   
